@@ -1,0 +1,143 @@
+.navbar-wrapper {
+    text-align: center;
+}
+
+.navbar-wrapper.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 1rem 1rem 1rem #262d3627;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.company-name {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--lightBlue);
+    padding: 20px 80px;
+    z-index: 2;
+}
+
+#nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-link li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav-link-flex {
+    display: none;
+}
+
+#nav-link li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.nav-link-content:hover {
+    color: var(--white);
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out; 
+}
+
+#nav-link li a.active {
+    color: var(--white);
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile i {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .nav-container {
+        position: relative;
+        z-index: 2;
+    }
+
+    #nav-link-flex-wrapper {
+        display: none;
+        height: 100%;
+    }
+
+    #nav-link-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        position: absolute;
+        top: 0;
+        left: -300px; 
+        width: 40%;
+        height: 1000px;
+        background: #262d36;
+        transition: left 0.5s ease-in-out; 
+        z-index: 1;
+        padding-top: 20%;
+    }
+
+    #nav-link-flex li {
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    #nav-link-flex li a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    #nav-link-flex li a:hover,
+    #nav-link-flex li a.active {
+        color: rgb(5, 205, 216);
+        height: 100%;
+    }
+
+    #nav-link {
+        display: none;
+    }
+
+    #nav-link-flex-wrapper.active {
+        display: block;
+        height: 100%;
+    }
+
+    #nav-link-flex.active {
+        left: 0;
+    }
+
+    #nav-link-flex li {
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .mobile {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+
