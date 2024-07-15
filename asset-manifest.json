@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Brito/static/css/main.84d1d783.css",
+    "main.js": "/Brito/static/js/main.51f0d2a5.js",
+    "static/media/video.mp4": "/Brito/static/media/video.d3497cabf0745d58cc36.mp4",
+    "static/media/p2.jpeg": "/Brito/static/media/p2.813c8da299315c8012b5.jpeg",
+    "static/media/p3.jpeg": "/Brito/static/media/p3.780477f38a131ccad760.jpeg",
+    "static/media/p1.jpeg": "/Brito/static/media/p1.0f82520099670f59b16a.jpeg",
+    "static/media/feature-banner.png": "/Brito/static/media/feature-banner.163a5bf52bc764295040.png",
+    "static/media/about-banner.png": "/Brito/static/media/about-banner.916e3c783489d584c3e7.png",
+    "static/media/slick.svg": "/Brito/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Brito/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Brito/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Brito/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Brito/index.html",
+    "main.84d1d783.css.map": "/Brito/static/css/main.84d1d783.css.map",
+    "main.51f0d2a5.js.map": "/Brito/static/js/main.51f0d2a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84d1d783.css",
+    "static/js/main.51f0d2a5.js"
+  ]
+}
