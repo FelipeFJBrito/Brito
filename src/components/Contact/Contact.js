@@ -61,7 +61,7 @@ const Contact = forwardRef((props, ref) => {
                                     <input type="text" placeholder="Full Name" name="user_name" required />
                                 </div>
                                 <div className="input-box">
-                                    <input type="email" placeholder="Email" name="user_email" required />
+                                    <input type="email" placeholder="Your Email" name="user_email" required />
                                 </div>
                                 <div className="input-box">
                                     <input type="text" placeholder="Subject" name="subject" required />

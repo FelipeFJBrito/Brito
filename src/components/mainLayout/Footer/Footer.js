@@ -53,24 +53,24 @@ const Footer = () => {
                     <div className="footer-bottom-content">
                         <h2>Learn More</h2>
                         <nav className="nav-footer">
+                            <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>Services</a>
                             <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About Us</a>
                             <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>Solution</a>
                             <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
-                            <a>Privacy Policy</a>
                         </nav>
                     </div>
                     <div className="footer-bottom-content">
                         <h2>Get in Touch</h2>
                         <p>5598 Ormidale Street, Vancouver BC, Canada</p>
-                        <p className="footer-contact">felipefjbrito@gmail.com</p>
-                        <a className="footer-portfolio" href="https://felipefjbrito.github.io/portfolio/#nav" target="_blank" rel="noopener noreferrer">Felipe Brito Portfolio</a>
                         <span className="footer-contact">+1(236)2342559</span>
+                        <a className="footer-portfolio" href="https://felipefjbrito.github.io/portfolio/#nav" target="_blank" rel="noopener noreferrer">Felipe Brito Portfolio</a>
+                        <p className="footer-contact">felipefjbrito@gmail.com</p>
 
                     </div>
                     <div className="footer-bottom-content">
                         <h2>Any Doubt?</h2>
                         <span>Contact Us Now</span>
-                        <div className="button-container">
+                        <div className="button-container-footer">
                             <a href="#contact" className="btn-primary" onClick={(e) => handleNavClick(e, 'contact')}>Contact Us</a>
                         </div>
                     </div>

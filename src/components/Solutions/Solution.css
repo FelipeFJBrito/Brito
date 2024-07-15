@@ -12,6 +12,16 @@
 
 .solution-title{
     color: var(--lightBlue);
+    font-size: 1.4rem;
+}
+
+.solution-title2{
+    color: var(--darkGray);
+    font-size: 1.8rem;
+}
+
+.solution-title{
+    color: var(--lightBlue);
 }
 .solution-rside{
     width: 50%;
@@ -24,7 +34,7 @@
     width: 500px;
     height: 500px;
 }
-.solution-lrside{
+.solution-lside{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -32,8 +42,108 @@
     width: 50%;
 }
 
+.solutions-content-bottom{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.solutions-content-lbottom{
+    display: flex;
+    gap: 20px;
+}
+.solutions-content-lbottom p{
+    font-size: 0.90rem;
+}
+
+.container-content-bottom-solutions{
+    width: 50%;
+}
+.solutions-content-lbottom span{
+    color: var(--lightBlue);
+    font-weight: 600;
+}
+
+.solutions-content-rbottom span{
+    color: var(--lightBlue);
+    font-weight: 600;
+}
+.solutions-content-rbottom{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+   
+}
+
+.solutions-content-rbottom p{
+    font-size: 0.90rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .solution-container{
+        flex-direction: column-reverse;
+    }
+    .solution-title {
+
+        font-size: 1.2rem;
+    }
+
+    .solution-title2 {
+        font-size: 1.2rem;
+        width: 300px;
+    }
+    .solution-wrapper {
+        padding-bottom: 100px;
+    
+    }
+
+    .solution-rside img{
+        padding-top: 10%;
+        width: 400px;
+        height: 400px;
+    }
+    .solution-lside{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 600px){
     .solution-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .solution-rside img{
+        width: 400px;
+        height: 400px;
+    }
+    .solution-lside{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .solution-title {
+
+        font-size: 1.2rem;
+    }
+
+    .solution-title2 {
+        font-size: 1.2rem;
+        width: 300px;
+    }
+    .solution-wrapper {
+        padding-bottom: 100px;
+    
+    }
+
+    .solution-rside img{
+        width: 300px;
+        height: 300px;
+    }
+    .solution-lside{
+        width: 100%;
     }
 }

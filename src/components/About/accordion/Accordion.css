@@ -1,0 +1,64 @@
+.accordion-wrapper {
+    border-radius: 3px;
+    background: white;
+    padding-top: 10px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    fill: var(--darkGray);
+    color: var(--darkGray);
+    transition: color 0.5s ease, fill 0.15s ease;
+    font-weight: 600;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.accordion .toggle .direction-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-weight: 600;
+}
+
+.accordion .content-parent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding-left: 20px;
+}
+
+.accordion.toggled .content-parent {
+    max-height: 1000px;
+}
+
+@media screen and (max-width: 1150px){
+    .accordion-wrapper {
+       width: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .accordion-wrapper {
+       width: 300px;
+    }
+    .accordion .toggle {
+        font-size: 1rem;
+    }
+    
+}
+
