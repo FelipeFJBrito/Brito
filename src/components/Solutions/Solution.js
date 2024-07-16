@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../About/AboutAssets/feature-banner.png';
+import img from '../About/AboutAssets/feature-banner.jpg';
 import './Solution.css';
 
 const Solution = () => {

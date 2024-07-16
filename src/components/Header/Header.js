@@ -22,6 +22,8 @@ const Header = () => {
         setClicked(false);
     };
     return (
+        <div>
+        <div className="gradient"></div>
         <div className="header-wrapper">
 
             <div className="header-container">
@@ -41,7 +43,7 @@ const Header = () => {
             </div>
 
         </div>
-
+        </div>
     )
 }
 

@@ -118,14 +118,14 @@
 
     .slider-container {
         margin-top: 50px;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         margin-bottom: 50px;
     }
 
     .card {
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
 
     }
 
@@ -137,12 +137,12 @@
 
     }
     .slick-prev {
-        left: -50px;
+        left: -40px;
         /* Adjust this value to increase/decrease the space on the left */
     }
     
     .slick-next {
-        right: -30px;
+        right: -20px;
         /* Adjust this value to increase/decrease the space on the right */
     }
 }
@@ -151,14 +151,14 @@
     
     .slider-container {
         margin-top: 50px;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         margin-bottom: 50px;
     }
 
     .card {
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
 
     }
 
@@ -170,12 +170,12 @@
 
     }
     .slick-prev {
-        left: -40px;
+        left: -30px;
         /* Adjust this value to increase/decrease the space on the left */
     }
     
     .slick-next {
-        right: -25px;
+        right: -20px;
         /* Adjust this value to increase/decrease the space on the right */
     }
 }
