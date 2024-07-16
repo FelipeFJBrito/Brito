@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 
-const Navbar = ({ scrollThreshold = 100 }) => {
+const Navbar = ({ scrollThreshold = 50 }) => {
     const [clicked, setClicked] = useState(false);
     const [fix, setFix] = useState(false);
 
