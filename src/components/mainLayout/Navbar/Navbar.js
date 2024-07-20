@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
+import LanguageSelector from '../../Language-selector/LanguageSelector';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = ({ scrollThreshold = 50 }) => {
     const [clicked, setClicked] = useState(false);
     const [fix, setFix] = useState(false);
+    const [showLanguages, setShowLanguages] = useState(false); // State to control dropdown visibility
+    const globe = <FontAwesomeIcon icon={faGlobe} />;
+    const { t } = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,6 +45,10 @@ const Navbar = ({ scrollThreshold = 50 }) => {
         setClicked(false);
     };
 
+    const toggleLanguages = () => {
+        setShowLanguages(!showLanguages);
+    };
+
     return (
         <div className={`navbar-wrapper ${fix ? 'fixed' : ''}`}>
             <nav className="nav-container">
@@ -47,22 +58,30 @@ const Navbar = ({ scrollThreshold = 50 }) => {
                 <div>
                     <ul id="nav-link" className={clicked ? 'active' : ''}>
                         <li className='nav-link-content'>
-                            <a href="#header" onClick={(e) => handleNavClick(e, 'header')} className="active">Home</a>
+                            <a href="#header" onClick={(e) => handleNavClick(e, 'header')} className="active">{t("home")}</a>
                         </li>
                         <li className='nav-link-content'>
-                            <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>Our Services</a>
+                            <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>{t("services")}</a>
                         </li>
                         <li className='nav-link-content'>
-                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>{t("about")}</a>
                         </li>
                         <li className='nav-link-content'>
-                            <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>Solution</a>
+                            <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>{t("solutions")}</a>
                         </li>
                         <li className='nav-link-content'>
-                            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+                            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>{t("project")}</a>
                         </li>
                         <li className='nav-link-content'>
-                            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
+                            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>{t("contact")}</a>
+                        </li>
+                        <li>
+                            <span className='planet' onClick={toggleLanguages}>{globe}</span>
+                            {showLanguages && (
+                                <div className='language-dropdown'>
+                                    <LanguageSelector />
+                                </div>
+                            )}
                         </li>
                     </ul>
                 </div>
@@ -73,19 +92,27 @@ const Navbar = ({ scrollThreshold = 50 }) => {
             <div>
                 <ul id="nav-link-flex" className={clicked ? 'active' : ''}>
                     <li className='nav-link-content'>
-                        <a href="#header" onClick={(e) => handleNavClick(e, 'header')} className="active">Home</a>
+                        <a href="#header" onClick={(e) => handleNavClick(e, 'header')} className="active">{t("home")}</a>
                     </li>
                     <li className='nav-link-content'>
-                        <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>Our Services</a>
+                        <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>{t("services")}</a>
                     </li>
                     <li className='nav-link-content'>
-                        <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+                        <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>{t("about")}</a>
                     </li>
                     <li className='nav-link-content'>
-                        <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>Solution</a>
+                        <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>{t("solutions")}</a>
                     </li>
                     <li className='nav-link-content'>
-                        <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+                        <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>{t("project")}</a>
+                    </li>
+                    <li>
+                        <span className='planet' onClick={toggleLanguages}>{globe}</span>
+                        {showLanguages && (
+                            <div className='language-dropdown-flex'>
+                                <LanguageSelector />
+                            </div>
+                        )}
                     </li>
                 </ul>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import './Projects.css';
 import img1 from '../Header/HeaderSlider/HeaderSliderAssets/p1.jpeg';
-import img2 from '../Header/HeaderSlider/HeaderSliderAssets/p2.jpeg';
-import img3 from '../Header/HeaderSlider/HeaderSliderAssets/p3.jpeg';
+import img2 from '../Header/HeaderSlider/HeaderSliderAssets/p4.png';
+import img3 from '../Header/HeaderSlider/HeaderSliderAssets/p5.png';
 
 const Projects = () => {
     return (
@@ -14,7 +14,7 @@ const Projects = () => {
             <div className="project-container">
                 <div className="project-card">
                     <div className="project-card-img">
-                        <img src={img1} alt="image"/>
+                        <img src={img1} alt="image" />
                     </div>
                     <div className="projects-text-content">
                         <h3 className="projects-text-content-title">Fernanda Ponte Portfolio</h3>
@@ -27,15 +27,14 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <div className="project-card-img">
-                        <img src={img2} alt="image"/>
+                        <img src={img2} alt="image" />
                     </div>
                     <div className="projects-text-content">
-                        <h3 className="projects-text-content-title">Fernanda Ponte Portfolio</h3>
+                        <h3 className="projects-text-content-title">Brito Website</h3>
                         <p>
-                            Professional Architecture Portfolio, containing all important information
-                            if you are an Architect.
+                            Brito's Company Website, a freelance company dedicated to web applications and development.
                         </p>
-                        <span>25 July 2024</span>
+                        <span>16 July 2024</span>
                     </div>
                 </div>
                 <div className="project-card">
@@ -43,12 +42,14 @@ const Projects = () => {
                         <img src={img3} alt="image" />
                     </div>
                     <div className="projects-text-content">
-                        <h3 className="projects-text-content-title">Fernanda Ponte Portfolio</h3>
+                        <a className="project-card-title" href="https://felipefjbrito.github.io/portfolio/#nav" target="_blank" rel="noopener noreferrer">
+                            <h3 className="projects-text-content-title">Felipe's Portfolio</h3>
+                        </a>
                         <p>
-                            Professional Architecture Portfolio, containing all important information
-                            if you are an Architect.
+                            Professional Felipe Portfolio, containing all important information
+                            such as projects, experiences, and education.
                         </p>
-                        <span>25 July 2024</span>
+                        <span>10 May 2024</span>
                     </div>
                 </div>
             </div>

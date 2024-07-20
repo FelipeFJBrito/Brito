@@ -104,7 +104,7 @@
 .button-container-footer a{
     width: 130px;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
     .footer-container {
         padding-top: 50px;

@@ -1,0 +1,26 @@
+.languages-wrapper {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Adjust the z-index to ensure it's above other elements */
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Adjust the z-index to ensure it's above other elements */
+    padding: 2px 0;
+}
+
+.button-language{
+    display: flex;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 2px 0 2px 8px;
+    margin: 1px 0;
+}
+
+.button-language:hover{
+    color: var(--lightBlue);
+    transition: 0.5s ease-in-out;
+}

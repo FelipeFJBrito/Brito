@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import {useTranslation } from "react-i18next";
 import { Parallax } from 'react-parallax';
 import HeaderSlider from "./HeaderSlider/HeaderSlider";
 import './Header.css';
 
 const Header = () => {
     const [clicked, setClicked] = useState(false);
-
+    const {t} = useTranslation()
+    
     const handleNavClick = (event, targetId) => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
@@ -29,12 +31,12 @@ const Header = () => {
                 <div className="header-container">
                     <div className="header-lside-container">
                         <div className="heading-container">
-                            <h1>Developing Solutions with Custom Web Applications</h1>
-                            <p>We are a web development company that focuses on creating innovative digital experiences.</p>
+                            <h1>{t("headerH1")}</h1>
+                            <p>{t("headerP")}</p>
                         </div>
                         <div className="button-container">
-                            <a href="#contact" className="btn-primary" onClick={(e) => handleNavClick(e, 'solutions')}>Explore</a>
-                            <a href="#contact" className="btn-secondary" onClick={(e) => handleNavClick(e, 'contact')}>Contact Us</a>
+                            <a href="#contact" className="btn-primary" onClick={(e) => handleNavClick(e, 'solutions')}>{t("btExplore")}</a>
+                            <a href="#contact" className="btn-secondary" onClick={(e) => handleNavClick(e, 'contact')}>{t("btContact")}</a>
                         </div>
                     </div>
                     <div className="header-rside-container">

@@ -1,9 +1,10 @@
 import React from 'react';
 import img from '../About/AboutAssets/feature-banner.jpg';
 import './Solution.css';
+import { useTranslation } from 'react-i18next';
 
 const Solution = () => {
-
+    const { t } = useTranslation();
 
     return (
         <div className='solution-wrapper'>
@@ -12,38 +13,38 @@ const Solution = () => {
                     <img src={img} />
                 </div>
                 <div className='solution-lside'>
-                    <h3 className="solution-title">Our Solutions</h3>
-                    <h2 className="solution-title2">Personalized web solutions to meet your individual needs.</h2>
+                    <h3 className="solution-title">{t("soTitle")}</h3>
+                    <h2 className="solution-title2">{t("soSubTitle")}</h2>
                     <div className='solutions-content'>
                         <div className='solutions-content-top'>
-                            <p>With a focus on usability, performance, and security, We create applications that enhance business efficiency and drive growth.</p>
+                            <p>{t("soText")}</p>
                         </div>
                         <div className='solutions-content-bottom'>
                             <div className='solutions-content-lbottom'>
                                 <div className='container-content-bottom-solutions'>
-                                    <span>Business Websites:</span>
+                                    <span>{t("so1Title")}</span>
                                     <p>
-                                        Professional and responsive websites to establish an online presence and attract customers.
+                                    {t("so1Description")}
                                     </p>
                                 </div>
                                 <div className='container-content-bottom-solutions'>
-                                    <span>Portfolio Websites:</span>
+                                    <span>{t("so2Title")}</span>
                                     <p>
-                                        Visually appealing and functional portfolio websites to showcase your clients' work and achievements.
+                                    {t("so2Description")}
                                     </p>
                                 </div>
                             </div>
                             <div className='solutions-content-rbottom'>
                                 <div className='container-content-bottom-solutions'>
-                                    <span>E-commerce Platforms:</span>
+                                    <span>{t("so3Title")}</span>
                                     <p>
-                                        Robust and scalable e-commerce solutions that offer a seamless shopping experience, including payment gateways, inventory management, and order processing.
+                                    {t("so3Description")}
                                     </p>
                                 </div>
                                 <div className='container-content-bottom-solutions'>
-                                    <span>Web-based Applications:</span>
+                                    <span>{t("so4Title")}</span>
                                     <p>
-                                        Custom web applications designed to meet specific business needs, from productivity tools to customer portals.
+                                    {t("so4Description")}
                                     </p>
                                 </div>
                             </div>

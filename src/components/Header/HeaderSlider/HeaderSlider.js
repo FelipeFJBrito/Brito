@@ -27,11 +27,11 @@ function SimpleSlider() {
         <div className="card">
           <img src={p1} alt="Slide 1" />
         </div>
-        <div className="card">
+        {/*<div className="card">
           <video controls>
             <source src={video} type="video/mp4" />
           </video>
-        </div>
+        </div>*/}
         <div className="card">
           <img src={p2} alt="Slide 2" />
         </div>

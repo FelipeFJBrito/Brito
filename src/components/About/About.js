@@ -2,59 +2,46 @@ import React from 'react';
 import img from './AboutAssets/about-banner.png';
 import './About.css';
 import Accordion from './accordion/Accordion';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+    const { t } = useTranslation();
     const data = [
         {
             id: 0,
-            label: "Developing Application",
+            label: t("a1Title"),
             renderContent: () => (
                 <p className='content-accordion'>
-                    We provide professional development applications 
-                    that are tailored to meet the needs of modern businesses. 
-                    Our web applications are designed with a focus on usability,
-                    performance, and security, ensuring a seamless experience for users. 
-                    Whether you're looking for a custom CRM, e-commerce platform, project management tool, 
-                    or any other web-based solution, our team of skilled developers is equipped to deliver 
-                    high-quality applications that drive efficiency and growth.                  
+                    {t("a1Description")}
                 </p>
             ),
         },
         {
             id: 1,
-            label: "Who are we?",
+            label: t("a2Title"),
             renderContent: () => (
                 <p className='content-accordion'>
-                    Passionate about creating exceptional web applications tailored to the needs of modern businesses. 
-                    With a strong focus on usability, performance, and security, we deliver custom solutions that enhance 
-                    efficiency and drive growth. Whether you need a CRM, e-commerce platform, project management tool, 
-                    or any other web-based solution, we are equipped to bring your vision to life with professionalism and expertise.                 
+                    {t("a2Description")}
                 </p>
             ),
         },
         {
             id: 2,
-            label: "Mission and Vision",
+            label: t("a3Title"),
             renderContent: () => (
                 <div className='content-accordion'>
                     <div className='content-accordion-container'>
-                        <h3>Mission:</h3>   
+                        <h3>{t("a4Title")}</h3>
                         <p>
-                            Our mission is to deliver innovative, high-quality
-                            web applications that empower businesses to achieve their goals. 
-                            We focus on usability, performance, and security to provide custom 
-                            solutions that enhance efficiency and drive growth.
-                        </p>            
-                    </div> 
+                            {t("a3Description")}
+                        </p>
+                    </div>
                     <div className='content-accordion-container'>
-                        <h3>Vision:</h3>   
+                        <h3>{t("a5Title")}</h3>
                         <p>
-                            To be the leading provider of innovative and high-quality 
-                            web applications that empower businesses to achieve their 
-                            full potential, driving efficiency, growth, and success through
-                            exceptional usability, performance, and security.
-                        </p>            
-                    </div>                   
+                        {t("a4Description")}
+                        </p>
+                    </div>
                 </div>
             ),
         },
@@ -64,8 +51,8 @@ const About = () => {
         <div className='about-wrapper'>
             <div className='about-container'>
                 <div className='about-lside'>
-                    <h3 className="about-title">Why Choose Us?</h3>
-                    <h2 className="about-title2">Learn more about us and what we do.</h2>
+                    <h3 className="about-title">{t("aTitle")}</h3>
+                    <h2 className="about-title2">{t("aSubTitle")}</h2>
                     <main>
                         <Accordion items={data} keepOthersOpen={true} />
                     </main>
