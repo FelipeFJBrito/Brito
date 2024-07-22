@@ -115,7 +115,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 headerH1: "Développer des solutions avec des applications web personnalisées",
                 headerP: "Nous sommes une société de développement web qui se concentre sur la création d'expériences numériques innovantes.",
                 btExplore: "Explorer",
-                btContact: "Nous Contacter",
+                btContact: "Contacter",
                 // Services
                 sTitle: "Nos Services",
                 sSubTitle: "Solutions web personnalisées pour répondre à vos besoins individuels.",
@@ -161,7 +161,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 projectData1: "25 juillet 2024",
                 projectData2: "16 juillet 2024",
                 projectData3: "10 mai 2024",
-
+                // Contact
                 contactTitle: "Contact",
                 contactTitle2: "Solutions web personnalisées pour répondre à vos besoins individuels.",
                 address1: "Adresse",
@@ -187,7 +187,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 fTouch: "Entrer en contact",
                 fAny: "Des questions?",
                 fAny1: "Contactez-nous maintenant",
-                fAny2: "Contactez-nous"
+                fAny2: "Contact"
             }
         },
         'pt-BR': {

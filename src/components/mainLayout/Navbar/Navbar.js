@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
-const Navbar = ({ scrollThreshold = 50 }) => {
+const Navbar = ({ scrollThreshold = 150 }) => {
     const [clicked, setClicked] = useState(false);
     const [fix, setFix] = useState(false);
-    const [showLanguages, setShowLanguages] = useState(false); // State to control dropdown visibility
+    const [showLanguages, setShowLanguages] = useState(false);
     const globe = <FontAwesomeIcon icon={faGlobe} />;
     const { t } = useTranslation();
 
@@ -16,6 +16,7 @@ const Navbar = ({ scrollThreshold = 50 }) => {
         const handleScroll = () => {
             if (window.scrollY >= scrollThreshold) {
                 setFix(true);
+                setShowLanguages(false);
             } else {
                 setFix(false);
             }
@@ -30,6 +31,7 @@ const Navbar = ({ scrollThreshold = 50 }) => {
 
     const handleClick = () => {
         setClicked(!clicked);
+        setShowLanguages(false);
     };
 
     const handleNavClick = (event, targetId) => {
