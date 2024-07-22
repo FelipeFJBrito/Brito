@@ -18,9 +18,10 @@
 }
 
 .project-card {
-    height: 400px;
+    height: auto;
     background: var(--white);
     border-radius: 10px;
+    padding-bottom: 10px;
     box-shadow: 6px 6px 2em rgb(128, 128, 128);
 }
 

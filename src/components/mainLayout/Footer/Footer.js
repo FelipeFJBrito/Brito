@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
     const [clicked, setClicked] = useState(false);
     const github = <FontAwesomeIcon icon={faGithub} />;
     const linkedin = <FontAwesomeIcon icon={faLinkedin} />;
-
+    const {t} = useTranslation();
+    
     const handleClick = () => {
         setClicked(!clicked);
     };
@@ -30,7 +31,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-top">
                     <h1>
-                        Bring your business to another level with <span>Brito</span>.
+                        {t("fHeader")} <span>Brito</span>.
                     </h1>
                 </div>
                 <div>
@@ -51,16 +52,16 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-bottom-content">
-                        <h2>Learn More</h2>
+                        <h2>{t("fLearn")}</h2>
                         <nav className="nav-footer">
-                            <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>Services</a>
-                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About Us</a>
-                            <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>Solution</a>
-                            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+                            <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>{t("fLearn1")}</a>
+                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>{t("fLearn2")}</a>
+                            <a href="#solutions" onClick={(e) => handleNavClick(e, 'solutions')}>{t("fLearn3")}</a>
+                            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>{t("fLearn4")}</a>
                         </nav>
                     </div>
                     <div className="footer-bottom-content">
-                        <h2>Get in Touch</h2>
+                        <h2>{t("fTouch")}</h2>
                         <p>5598 Ormidale Street, Vancouver BC, Canada</p>
                         <span className="footer-contact">+1(236)2342559</span>
                         <a className="footer-portfolio" href="https://felipefjbrito.github.io/portfolio/#nav" target="_blank" rel="noopener noreferrer">Felipe Brito Portfolio</a>
@@ -68,10 +69,10 @@ const Footer = () => {
 
                     </div>
                     <div className="footer-bottom-content">
-                        <h2>Any Doubt?</h2>
-                        <span>Contact Us Now</span>
+                        <h2>{t("fAny")}</h2>
+                        <span>{t("fAny1")}</span>
                         <div className="button-container-footer">
-                            <a href="#contact" className="btn-primary" onClick={(e) => handleNavClick(e, 'contact')}>Contact Us</a>
+                            <a href="#contact" className="btn-primary" onClick={(e) => handleNavClick(e, 'contact')}>{t("fAny2")}</a>
                         </div>
                     </div>
                 </div>

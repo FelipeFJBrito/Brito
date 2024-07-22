@@ -55,8 +55,52 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 so2Description: "Visually appealing and functional portfolio websites to showcase your clients' work and achievements.",
                 so3Description: "Robust and scalable e-commerce solutions that offer a seamless shopping experience, including payment gateways, inventory management, and order processing.",
                 so4Description: "Custom web applications designed to meet specific business needs, from productivity tools to customer portals.",
+                // Projects
+                projectTitle: "Our Projects",
+                projectTitle2: "Take a look at some of our projects",
+                projectContentTitle1: "Fernanda Ponte Portfolio",
+                projectContentTitle2: "Brito Website",
+                projectContentTitle3: "Felipe's Portfolio",
+                projectText1: "Professional Architecture Portfolio, containing all important information if you are an Architect.",
+                projectText2: "Brito's Company Website, a freelance company dedicated to web applications and development.",
+                projectText3: "Professional Felipe Portfolio, containing all important information such as projects, experiences, and education.",
+                projectData1: "25 July 2024",
+                projectData2: "16 July 2024",
+                projectData3: "10 May 2024",
+
+                //contact
+                contactTitle: "Contact",
+                contactTitle2: "Personalized web solutions to meet your individual needs.",
+                address1: "Address",
+                address2: "Vancouver BC",
+                address3: "5598 Ormidale Street",
+                phone1: "Phone",
+                phone2: "+1 (236)2342559",
+                email1: "Email",
+                email2: "felipefjbrito@gmail.com",
+                topic1: "Send me a message",
+                topic2: "If you have any work for me or any types of question, you can send me message from here.",
+                placeh1: "Full Name",
+                placeh2: "Your Email",
+                placeh3: "Subject",
+                cButton: "send Message",
+
+                //footer
+                fHeader: "Bring your business to another level with",
+                fLearn: "Learn More",
+                fLearn1: "Services",
+                fLearn2: "About Us",
+                fLearn3: "Solution",
+                fLearn4: "Projects",
+                fTouch: "Get in Touch",
+                fAny: "Any Doubt?",
+                fAny1: "Contact Us Now",
+                fAny2: "Contact Us",
+
             }
         },
+
+
         fr: {
             translation: {
                 // Nav bar
@@ -105,6 +149,45 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 so2Description: "Portefeuilles visuellement attrayants et fonctionnels pour présenter le travail et les réalisations de vos clients.",
                 so3Description: "Solutions de commerce électronique robustes et évolutives offrant une expérience d'achat fluide, y compris les passerelles de paiement, la gestion des stocks et le traitement des commandes.",
                 so4Description: "Applications web personnalisées conçues pour répondre aux besoins spécifiques des entreprises, des outils de productivité aux portails clients.",
+                //Projects
+                projectTitle: "Nos Projets",
+                projectTitle2: "Jetez un œil à certains de nos projets",
+                projectContentTitle1: "Portfolio de Fernanda Ponte",
+                projectContentTitle2: "Site Web Brito",
+                projectContentTitle3: "Portfolio de Felipe",
+                projectText1: "Portfolio professionnel d'architecture, contenant toutes les informations importantes si vous êtes architecte.",
+                projectText2: "Site de la société Brito, une entreprise freelance dédiée aux applications et au développement web.",
+                projectText3: "Portfolio professionnel de Felipe, contenant toutes les informations importantes telles que projets, expériences et formation.",
+                projectData1: "25 juillet 2024",
+                projectData2: "16 juillet 2024",
+                projectData3: "10 mai 2024",
+
+                contactTitle: "Contact",
+                contactTitle2: "Solutions web personnalisées pour répondre à vos besoins individuels.",
+                address1: "Adresse",
+                address2: "Vancouver BC",
+                address3: "5598 Ormidale Street",
+                phone1: "Téléphone",
+                phone2: "+1 (236)2342559",
+                email1: "Email",
+                email2: "felipefjbrito@gmail.com",
+                topic1: "Envoyez-moi un message",
+                topic2: "Si vous avez du travail pour moi ou des questions, vous pouvez m'envoyer un message d'ici.",
+                placeh1: "Nom Complet",
+                placeh2: "Votre Email",
+                placeh3: "Objet",
+                cButton: "Envoyer le Message",
+                // Footer
+                fHeader: "Amenez votre entreprise à un autre niveau avec",
+                fLearn: "En savoir plus",
+                fLearn1: "Services",
+                fLearn2: "À propos de nous",
+                fLearn3: "Solution",
+                fLearn4: "Projets",
+                fTouch: "Entrer en contact",
+                fAny: "Des questions?",
+                fAny1: "Contactez-nous maintenant",
+                fAny2: "Contactez-nous"
             }
         },
         'pt-BR': {
@@ -134,7 +217,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // About
                 aTitle: "Sobre Nós",
                 aSubTitle: "Soluções web personalizadas para atender às suas necessidades individuais.",
-                a1Title: "Desenvolvimento de Aplicativos",
+                a1Title: "Desenvolvimento de Apps",
                 a2Title: "Quem Somos?",
                 a3Title: "Missão e Visão",
                 a4Title: "Missão:",
@@ -155,6 +238,45 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 so2Description: "Portfólios visualmente atraentes e funcionais para mostrar o trabalho e as realizações de seus clientes.",
                 so3Description: "Soluções de e-commerce robustas e escaláveis que oferecem uma experiência de compra sem interrupções, incluindo gateways de pagamento, gerenciamento de estoque e processamento de pedidos.",
                 so4Description: "Aplicações web personalizadas projetadas para atender às necessidades específicas de negócios, de ferramentas de produtividade a portais de clientes.",
+                // Projects
+                projectTitle: "Nossos Projetos",
+                projectTitle2: "Dê uma olhada em alguns de nossos projetos",
+                projectContentTitle1: "Portfólio de Fernanda Ponte",
+                projectContentTitle2: "Site Brito",
+                projectContentTitle3: "Portfólio de Felipe",
+                projectText1: "Portfólio profissional de arquitetura, contendo todas as informações importantes se você é arquiteto.",
+                projectText2: "Site da empresa Brito, uma empresa freelance dedicada a aplicações e desenvolvimento web.",
+                projectText3: "Portfólio profissional de Felipe, contendo todas as informações importantes como projetos, experiências e educação.",
+                projectData1: "25 de julho de 2024",
+                projectData2: "16 de julho de 2024",
+                projectData3: "10 de maio de 2024",
+                // Contact
+                contactTitle: "Contato",
+                contactTitle2: "Soluções web personalizadas para atender às suas necessidades individuais.",
+                address1: "Endereço",
+                address2: "Vancouver BC",
+                address3: "5598 Ormidale Street",
+                phone1: "Telefone",
+                phone2: "+1 (236)2342559",
+                email1: "Email",
+                email2: "felipefjbrito@gmail.com",
+                topic1: "Envie-me uma mensagem",
+                topic2: "Se você tem algum trabalho para mim ou qualquer tipo de pergunta, você pode me enviar uma mensagem daqui.",
+                placeh1: "Nome Completo",
+                placeh2: "Seu Email",
+                placeh3: "Assunto",
+                cButton: "Enviar",
+                // Footer
+                fHeader: "Leve seu negócio a outro nível com",
+                fLearn: "Saiba Mais",
+                fLearn1: "Serviços",
+                fLearn2: "Sobre Nós",
+                fLearn3: "Solução",
+                fLearn4: "Projetos",
+                fTouch: "Entre em Contato",
+                fAny: "Alguma dúvida?",
+                fAny1: "Contate-nos agora",
+                fAny2: "Contato"
             }
         }
     }

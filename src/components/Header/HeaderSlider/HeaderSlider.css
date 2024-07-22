@@ -1,16 +1,16 @@
 .slider-container {
 
-    width: 450px;
+    width: 500px;
     margin: 0 auto;
 }
 
 .card {
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     display: flex;
-    padding-left: 0% ;
+    padding-left: 0%;
     justify-content: center;
     align-items: center;
 }
@@ -45,6 +45,20 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1700px) {
+    .slider-container {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 450px;
+        height: 450px;
+
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -95,6 +109,7 @@
         height: 300px;
 
     }
+
     .slick-prev::before,
     .slick-next::before {
         font-size: 40px;
@@ -102,11 +117,12 @@
         opacity: 1;
 
     }
+
     .slick-prev {
         left: -50px;
         /* Adjust this value to increase/decrease the space on the left */
     }
-    
+
     .slick-next {
         right: -30px;
         /* Adjust this value to increase/decrease the space on the right */
@@ -136,19 +152,20 @@
         opacity: 1;
 
     }
+
     .slick-prev {
         left: -40px;
         /* Adjust this value to increase/decrease the space on the left */
     }
-    
+
     .slick-next {
         right: -20px;
         /* Adjust this value to increase/decrease the space on the right */
     }
 }
 
-@media screen and (max-width: 400px){
-    
+@media screen and (max-width: 400px) {
+
     .slider-container {
         margin-top: 50px;
         width: 300px;
@@ -169,13 +186,30 @@
         opacity: 1;
 
     }
+
     .slick-prev {
         left: -30px;
         /* Adjust this value to increase/decrease the space on the left */
     }
-    
+
     .slick-next {
         right: -20px;
         /* Adjust this value to increase/decrease the space on the right */
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .slider-container {
+      
+        width: 250px;
+        height: 250px;
+    
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+
     }
 }

@@ -44,6 +44,7 @@
       border-radius: 6px;
       padding: 20px 60px 30px 40px;
       box-shadow: 6px 6px 2em rgb(128, 128, 128);
+      height: 55vh;
     }
     .container-contact .content{
       display: flex;
@@ -154,7 +155,7 @@
     .container-contact{
       width: 70%;
       padding: 0px 40px 0px 35px ;
-      height: 700px;
+      height: 750px;
     }
   }
   
@@ -163,6 +164,7 @@
       .container-contact{
         width: 90%;
         padding: 0px 40px 0px 35px ;
+       
       }
       .container-contact .content .right-side{
        width: 75%;
